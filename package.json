@@ -1,14 +1,14 @@
 {
   "name": "scrapper",
   "version": "12.2.3",
-  "description": "scrapping-web-tools",
-  "main": "node index.js",
+  "description": "jembot",
+  "main": "node itil.js",
   "scripts": {
-    "start": "nodemon ndex.js"
+    "start": "itil.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inirey/scrapper.git"
+    "url": "git+https://github.com/inirey/sekreb.git"
   },
   "keywords": [
     "simple",
@@ -19,7 +19,7 @@
   "author": "Rey",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/inirey/scrapper/issues"
+    "url": "https://github.com/inirey/sekreb/issues"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -30,8 +30,6 @@
     "child_process": "^1.0.2",
     "cors": "^2.8.5",
     "path": "^0.12.7",
-    "dotenv": "^8.2.0",
-    "canvacord": "^5.2.1",
     "@puppeteer/browsers": "^2.10.5",
     "puppeteer": "^24.9.0",
     "puppeteer-extra": "^3.3.6",
@@ -39,15 +37,11 @@
     "@sl-code-lords/js-extra-types": "^0.0.2-dev",
     "puppeteer-extra-plugin-recaptcha": "^3.6.8",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "canvas-hikki": "github:ZyxMapLe/canvas-hikki",
-    "canvas": "^3.1.0",
-    "emoji-api": "^1.0.2",
     "for-each": "0.3.5",
     "express": "^4.17.1",
     "fbdl-core": "^1.0.2",
     "form-data": "^4.0.0",
     "fs": "0.0.1-security",
-    "genius-lyrics": "^4.2.7",
     "instatouch": "^2.3.3",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
@@ -60,9 +54,7 @@
     "request": "^2.88.2",
     "ssl-express-www": "^3.0.7",
     "tiktok-scraper": "^1.4.12",
-    "urlencode": "^1.1.0",
-    "api-rey": "1.0.0",
-    "zrapi": "0.0.6"
+    "urlencode": "^1.1.0"
   },
-  "homepage": "https://github.com/inirey/scrapper#readme"
+  "homepage": "https://github.com/inirey/sekreb#readme"
 }
