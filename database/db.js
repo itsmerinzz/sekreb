@@ -1,21 +1,21 @@
 var __path = process.cwd(),
       monk = require('monk'),
-     { color } = require(__path + '/lib/color.js')
+     { color } = require(__path + '/opoya/color.js')
 
 // Connection URL
-var url = 'https://api.reysekha.xyz';
+var url = 'https://example.com';
 try {
-if(url == 'https://api.reysekha.xyz') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
+if(url == 'https://example.com') throw console.log(color('Cek konfigurasi database','red'));
 } catch (e) {
 	return;
 	}
 var db = monk(url);
 
 db.then(() => {
-  console.log(color('Connected correctly to server, starting','green'))
+  console.log(color('Connected server, starting','green'))
 })
 .catch ((e) => {
-	console.log(color('Error : '+ e +'\n\nGagal connect ke database, \ncek configurasi database apakah Connection URL sudah benar','red'))
+	console.log(color('Error : '+ e +'\n\nGagal connect ke database','red'))
 	})
 
 
