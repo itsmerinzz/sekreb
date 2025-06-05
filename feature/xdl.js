@@ -1,7 +1,4 @@
-/**
- * Created By Rey
- * github.com/inirey
- */
+// Created By Rey
 
 const axios = require('axios');
 const cheerio = require('cheerio');
