@@ -1,9 +1,3 @@
-# Scraper Api
-
-- Tiktok Scraper
-- Facebook Scraper
-- Textprome Scraper
-- Photooxry Scraper
-- Joox Scraper
-- Twitter Scraper
-- Instagram Scraper
+### Thanks To 
+[`@Hanif`](https://github.com/MRHRTZ)
+[`@Rey`](https://github.com/inirey)
