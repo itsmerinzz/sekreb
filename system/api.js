@@ -18,9 +18,9 @@ var options = require(__path + '/lib/options.js');
   FEATURE
 */
 
-var { facebook } = require(__path + '/downloader/facebook.js');
-var { twitter } = require(_path + '/downloader/twitter.js');
-var { TiktokDownloader } = require(_path + '/downloader/tiktok.js');
+var { facebook } = require(__path + '/feature/facebook.js');
+var { twitter } = require(_path + '/feature/twitter.js');
+var { TiktokDownloader } = require(_path + '/feature/tiktok.js');
 
 
 var cookie = process.env.COOCKIE
