@@ -2,7 +2,7 @@ var __path = process.cwd(),
       monk = require('monk'),
      { color } = require(__path + '/opoya/color.js')
 
-// Connection URL
+// Connection
 var url = 'https://example.com';
 try {
 if(url == 'https://example.com') throw console.log(color('Cek konfigurasi database','red'));
