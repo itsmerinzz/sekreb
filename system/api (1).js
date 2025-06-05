@@ -1,9 +1,9 @@
 __path = process.cwd()
 //var favicon = require('serve-favicon');
 var express = require('express');
-var db = require(__path + '/database/db');
+var db = require(__path + '/main/db');
 try {
-var zahirr = db.get("zahirr");
+var apis = db.get("apis");
 } catch (e) {
 	console.log('')  
 }
