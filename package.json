@@ -2,9 +2,9 @@
   "name": "scrapper",
   "version": "12.2.3",
   "description": "jembot",
-  "main": "node itil.js",
+  "main": "node index.js",
   "scripts": {
-    "start": "itil.js"
+    "start": "index.js"
   },
   "repository": {
     "type": "git",
