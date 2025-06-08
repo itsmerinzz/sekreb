@@ -17,7 +17,7 @@ var options = require(__path + '/lib/options.js');
 /* 
   FEATURE
 */
-
+var { pornhubDetailScraper } = require(__path + '/feature/phub.js');
 var { facebook } = require(__path + '/feature/facebook.js');
 var { twitter } = require(_path + '/feature/twitter.js');
 var { TiktokDownloader } = require(_path + '/feature/tiktok.js');
@@ -62,6 +62,34 @@ router.get('/dl/facebook', async (req, res, next) => {
       res.json(error)
     });
 
+router.get('/pornhub', async (req, res) => {
+  const query = req.query.query || req.query.q;
+  const apikey = req.query.apikey;
+
+  if (!query) {
+    return res.status(400).json({
+      status: false,
+      message: 'Query parameter "query" is required.'
+    });
+  }
+
+  try {
+    const data = await pornhubDetailScraper(query);
+    res.json({
+      status: true,
+      query,
+      result: data
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      status: false,
+      creator: '@Rey',
+      message: 'Scraping failed or site may be blocked.',
+    });
+  }
+});
+	
 router.get('/dl/tiktok', async (req, res, next) => {
     var Apikey = req.query.apikey,
         url = req.query.url
