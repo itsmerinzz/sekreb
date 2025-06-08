@@ -9,9 +9,9 @@ var apis = db.get("apis");
 }
 
 var creator = "Rey"
-var { color, bgcolor } = require(__path + '/lib/color.js');
-var { fetchJson } = require(__path + '/lib/fetcher.js');
-var options = require(__path + '/lib/options.js');
+var { color, bgcolor } = require(__path + '/opoya/color.js');
+var { fetchJson } = require(__path + '/opoya/fetcher.js');
+var options = require(__path + '/opoya/options.js');
 
 
 /* 
